@@ -31,7 +31,6 @@
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
                   &kp RET &kp SPACE &to 1   &kp TAB &kp BSPC &kp LSHFT
                         >;
-                        sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT &msc SCRL_UP SCRL_DOWN>;
                 };
                 Layer_2 {
                         bindings = <
@@ -40,7 +39,6 @@
    &kp APOS &kp QMARK &kp EQUAL &kp LT &kp GT         &kp UNDER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp RBKT
                         &kp DQT &kp LBRC &to 0         &kp C_AL_SELECT_TASK &to 2 &trans      
                         >;
-                        sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
                 };
 
                 Layer_3 {
@@ -49,7 +47,6 @@
                                     &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &none        &kp PG_DN &kp C_AC_REDO &K_CUT &kp C_BRI_DEC &none
                                                   &to 4 &kp DEL &to 0                  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &none
                         >;
-                        sensor-bindings = <&trans &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
 };
