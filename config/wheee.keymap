@@ -23,7 +23,7 @@
                 };
         };
         behaviors {
-                rot_msc: sensor_rotate_kp {
+                rot_msc: sensor_rotate_msc {
                         compatible = "zmk,behavior-sensor-rotate-var";
                         #sensor-binding-cells = <2>;
                         tap-ms = <50>;
