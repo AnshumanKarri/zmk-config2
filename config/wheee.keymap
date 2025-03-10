@@ -47,7 +47,7 @@
                 Layer_3 {
                         bindings = <&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp HOME &kp END &kp K_COPY &select_all &none
                                     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10                &kp PG_UP &kp K_UNDO &kp K_PASTE &kp C_BRI_INC &none
-                                    &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &none        &kp PG_DN &kp C_AC_REDO &K_CUT &kp C_BRI_DEC &none
+                                    &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &none        &kp PG_DN &kp C_AC_REDO &kp K_CUT &kp C_BRI_DEC &none
                                                   &to 4 &kp DEL &to 0                  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &none
                         >;
                         sensor-bindings = <&trans &inc_dec_kp C_VOL_UP C_VOL_DN>;
