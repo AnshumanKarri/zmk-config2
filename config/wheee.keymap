@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
         macros {
@@ -31,6 +32,7 @@
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
                   &kp RET &kp SPACE &to 1   &kp TAB &kp BSPC &kp LSHFT
                         >;
+                        sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT &msc SCRL_UP SCRL_DOWN>;
                 };
                 Layer_2 {
                         bindings = <
@@ -39,14 +41,16 @@
    &kp APOS &kp QMARK &kp EQUAL &kp LT &kp GT         &kp UNDER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp RBKT
                         &kp DQT &kp LBRC &to 0         &kp C_AL_SELECT_TASK &to 2 &trans      
                         >;
+                        sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
                 };
 
                 Layer_3 {
-                        bindings = <&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp HOME &kp END &kp K_COPY &select_all &trans
-                                    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10                &kp PG_UP &kp K_UNDO &kp K_PASTE &kp C_BRI_INC &trans
-                                    &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &trans        &kp PG_DN &kp C_AC_REDO &K_CUT &kp C_BRI_DEC &trans
-                                                  &to 4 &kp DEL &to 0                  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &trans &trans
+                        bindings = <&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp HOME &kp END &kp K_COPY &select_all &none
+                                    &kp F6 &kp F7 &kp F8 &kp F9 &kp F10                &kp PG_UP &kp K_UNDO &kp K_PASTE &kp C_BRI_INC &none
+                                    &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &none        &kp PG_DN &kp C_AC_REDO &K_CUT &kp C_BRI_DEC &none
+                                                  &to 4 &kp DEL &to 0                  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &none
                         >;
+                        sensor-bindings = <&trans &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
 };
