@@ -22,6 +22,14 @@
                                 ;
                 };
         };
+        behaviors {
+                rot_msc: sensor_rotate_kp {
+                        compatible = "zmk,behavior-sensor-rotate-var";
+                        #sensor-binding-cells = <2>;
+                        tap-ms = <50>;
+                        bindings = <&msc>, <&msc>;
+                };
+        }
         keymap {
                 compatible = "zmk,keymap";
 
@@ -32,7 +40,7 @@
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
                   &kp RET &kp SPACE &to 1   &kp TAB &kp BSPC &kp LSHFT
                         >;
-                        sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT &msc SCRL_UP SCRL_DOWN>;
+                        sensor-bindings = <&rot_msc SCRL_RIGHT SCRL_LEFT &rot_msc SCRL_UP SCRL_DOWN>;
                 };
                 Layer_2 {
                         bindings = <
