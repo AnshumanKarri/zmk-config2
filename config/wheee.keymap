@@ -29,7 +29,7 @@
                         tap-ms = <50>;
                         bindings = <&msc>, <&msc>;
                 };
-        }
+        };
         keymap {
                 compatible = "zmk,keymap";
 
