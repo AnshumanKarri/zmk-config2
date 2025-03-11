@@ -58,7 +58,7 @@
                                     &kp F11 &kp F12 &kp K_SLEEP &kp PSCRN &none        &kp PG_DN &kp C_AC_REDO &kp K_CUT &kp C_BRI_DEC &none
                                                   &to 4 &kp DEL &to 0                  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &none
                         >;
-                        sensor-bindings = <&trans &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
 };
